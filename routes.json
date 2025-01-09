@@ -1,0 +1,38 @@
+[
+    {
+        "path": "/v1/employees",
+        "method": "GET",
+        "module": "employee",
+        "endpoint_filter": "employee_list"
+    },
+    {
+        "path": "/v1/employee/:id",
+        "method": "GET",
+        "module": "employee",
+        "endpoint_filter": "employee_detail"
+    },
+    {
+        "path": "/v1/employee",
+        "method": "GET",
+        "module": "employee",
+        "endpoint_filter": "employee_filter_status"
+    },
+    {
+        "path": "/v1/employee",
+        "method": "POST",
+        "module": "employee",
+        "endpoint_filter": "employee_create"
+    },
+    {
+        "path": "/v1/employee/:id",
+        "method": "PUT",
+        "module": "employee",
+        "endpoint_filter": "employee_update"
+    },
+    {
+        "path": "/v1/department",
+        "method": "GET",
+        "module": "department",
+        "endpoint_filter": "salary"
+    }
+]

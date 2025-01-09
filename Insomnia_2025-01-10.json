@@ -1,0 +1,286 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2025-01-09T19:09:04.926Z",
+    "__export_source": "insomnia.desktop.app:v10.3.0",
+    "resources": [
+        {
+            "_id": "req_68dabcdd69f647478dfa2c1a3f38b9ac",
+            "parentId": "fld_2362510fed654a28b456f5a0fa6d754f",
+            "modified": 1736449715366,
+            "created": 1736447081584,
+            "url": "{{host}}/api/v1/department?name=IT",
+            "name": "Average Salary by Department",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0",
+                    "id": "pair_f9bc57d6a04349319ddf9e19ebd516d0"
+                },
+                {
+                    "id": "pair_0598dfaa19f64b95b5aa31e77c1093ed",
+                    "name": "x-api-key",
+                    "value": "123",
+                    "description": "",
+                    "disabled": false
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736447081584,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_2362510fed654a28b456f5a0fa6d754f",
+            "parentId": "wrk_e31dbeb9da4549ac9ed2d1c328780839",
+            "modified": 1736449703560,
+            "created": 1736447061162,
+            "name": "Department",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1736447061162,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_e31dbeb9da4549ac9ed2d1c328780839",
+            "parentId": null,
+            "modified": 1736449653722,
+            "created": 1736357246257,
+            "name": "Employee REST",
+            "description": "# Simple API Employee Management\n\n```\nSystem Requirement\n- Go >= go1.22.6 \n- MySQL\n```\n\n\n### Running the Application\n\n1. **Clone the repository:**\n    ```sh\n    $ git clone https://github.com/boombaw/go-employee.git\n    $ cd go-employee\n    ```\n\n2. **Set up environment variables:**\n    ```sh\n    Create a `.env` file in the root directory and copy data from .env.example, update the value based on you need\n    ```\n\n3. **Run the application:**\n    ```sh\n    $ go run main.go\n    ```\n    Optional to run via a Makefile command, provided you have installed it.\n\n    ```sh\n    $ make run\n    ```\n4. **List Endpoint**",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_ea5d236c7f1f430db467e34b430e5e82",
+            "parentId": "fld_1a42b362fe134a17b7e5025cf70d2ab8",
+            "modified": 1736444103259,
+            "created": 1736441566607,
+            "url": "{{host}}/api/v1/employees",
+            "name": "Get All",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0",
+                    "id": "pair_061f119fba864308bde33d55f1b6db5a"
+                },
+                {
+                    "id": "pair_ede26dd64a134894b3cecacb846d2e8c",
+                    "name": "x-api-key",
+                    "value": "123",
+                    "description": "",
+                    "disabled": false
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736441566607,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_1a42b362fe134a17b7e5025cf70d2ab8",
+            "parentId": "wrk_e31dbeb9da4549ac9ed2d1c328780839",
+            "modified": 1736357419113,
+            "created": 1736357419113,
+            "name": "Employee",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1736357419113,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_629b7975e6784ad7835b7529ba89a9ba",
+            "parentId": "fld_1a42b362fe134a17b7e5025cf70d2ab8",
+            "modified": 1736441333635,
+            "created": 1736420486720,
+            "url": "{{host}}/api/v1/employee/11",
+            "name": "Get Employee",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736420486720,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7933b857ba084466a43177a5b016d47b",
+            "parentId": "fld_1a42b362fe134a17b7e5025cf70d2ab8",
+            "modified": 1736445416356,
+            "created": 1736445100791,
+            "url": "{{host}}/api/v1/employee?status=active",
+            "name": "Get Employee By Status",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0",
+                    "id": "pair_0d0945e312cf4c2f808d019d53cf0097"
+                },
+                {
+                    "id": "pair_33361208626045ab91a0a59653751b0e",
+                    "name": "x-api-key",
+                    "value": "123",
+                    "description": "",
+                    "disabled": false
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736404721520.75,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b085ab80901641ed8019fe77c45ff182",
+            "parentId": "fld_1a42b362fe134a17b7e5025cf70d2ab8",
+            "modified": 1736441549715,
+            "created": 1736440163266,
+            "url": "{{host}}/api/v1/employee/11",
+            "name": "Update Employee",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\" : \"adi\",\n\t\"department\": \"IT\",\n\t\"status\" : \"active\",\n\t\"salary\" : 15000\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736388956321.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4cbfa774c33e433cb87c5d66a993f691",
+            "parentId": "fld_1a42b362fe134a17b7e5025cf70d2ab8",
+            "modified": 1736438004440,
+            "created": 1736357425923,
+            "url": "{{host}}/api/v1/employee",
+            "name": "Create Request",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\" : \"ad\",\n\t\"department\": \"IT\",\n\t\"status\" : \"active\",\n\t\"salary\" : 15.0\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1736357425923,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_1ab1ba8fe0110a187aca2b76ddfc3a92439c4805",
+            "parentId": "wrk_e31dbeb9da4549ac9ed2d1c328780839",
+            "modified": 1736357456757,
+            "created": 1736357246261,
+            "name": "Base Environment",
+            "data": {
+                "host": "http://localhost:3000"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "host"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1736357246261,
+            "environmentType": "json",
+            "kvPairData": [],
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_1ab1ba8fe0110a187aca2b76ddfc3a92439c4805",
+            "parentId": "wrk_e31dbeb9da4549ac9ed2d1c328780839",
+            "modified": 1736357246263,
+            "created": 1736357246263,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
