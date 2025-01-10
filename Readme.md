@@ -15,11 +15,15 @@ A simple employee management system built using Go and MySQL as the database. Th
     $ cd go-employee
     ```
 
-2. **Set up the environment file:**
+2. **Set up database:**
+    - Create database with database name **db_employee**
+    - Restore **db_employee.sql** on folder **pkg/v1/mock-data**.
+       
+3. **Set up the environment file:**
     - Create a `.env` file in the root directory.
     - Copy the content from `.env.example` and adjust the values as needed.
 
-3. **Run the application:**
+4. **Run the application:**
     ```bash
     $ go run main.go
     ```
@@ -27,6 +31,7 @@ A simple employee management system built using Go and MySQL as the database. Th
     ```bash
     $ make run
     ```
+
 
 ## Base URL
 `http://localhost:3000`
@@ -95,7 +100,4 @@ A simple employee management system built using Go and MySQL as the database. Th
    - **Headers**:
      - `x-api-key`: `XXZiqjZgoLXTO23VPJEjxtc7ZXX`
    - **Description**: Retrieve the average salary by department.
-
-## Additional Notes
-Make sure to replace `{{host}}` with `http://localhost:3000` or the domain configured for your application.
 
