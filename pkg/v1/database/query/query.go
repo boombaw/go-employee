@@ -12,7 +12,6 @@ var InsertEmployee = `INSERT INTO employee (
 // Query untuk memperbarui data karyawan
 var UpdateEmployee = `UPDATE employee
                       SET
-                        name = ?,
                         department = ?,
                         status = ?,
                         salary = ?

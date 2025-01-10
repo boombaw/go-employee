@@ -119,7 +119,7 @@ func (e *employee) Update(arg models.Employee) (res sql.Result, err error) {
 
 	tx := db.MustBegin()
 
-	res = tx.MustExec(query.UpdateEmployee, arg.Name, arg.Department, arg.Status, arg.Salary, arg.ID)
+	res = tx.MustExec(query.UpdateEmployee, arg.Department, arg.Status, arg.Salary, arg.ID)
 
 	log.Logger = log.With().Caller().Logger()
 
