@@ -64,10 +64,10 @@ A simple employee management system built using Go and MySQL as the database. Th
    - **Body**:
      ```json
      {
-       "name": "ad",
+       "name": "adi",
        "department": "IT",
        "status": "active",
-       "salary": 15.0
+       "salary": 15000
      }
      ```
    - **Description**: Add a new employee.
@@ -80,7 +80,6 @@ A simple employee management system built using Go and MySQL as the database. Th
    - **Body**:
      ```json
      {
-       "name": "adi",
        "department": "IT",
        "status": "active",
        "salary": 15000
